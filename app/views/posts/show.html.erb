@@ -1,0 +1,5 @@
+<%= @post.title %> <br>
+<%= @post.content %> <br>
+
+<%= link_to "edit", edit_post_path(@post),data: {confirm: "Do you even code bruh ?"} %>
+<%= link_to "delete", post_path(@post),method: :delete,data: { confirm: "Are you  sure? "} %>
