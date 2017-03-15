@@ -1,0 +1,29 @@
+<div class="wrapper  wrapper_padding clearfix">
+      <div class="col-1 about homepage_content">
+        <h2>About</h2>
+        <hr>
+        <p>Umami VHS forage, <a href="#">kickstarter</a> next level portland prism organic cred whatever.</p>
+         <p>Unicorn before they sold out gentrify, cronut selfies pitchfork gluten-free <a href="#">meh</a> af flexitarian <p>mlkshk yuccie pinterest bicycle rights..</p>
+      </div>
+      <div class="col-2 homepage_content">
+        <h2>Stuff I've Written</h2>
+        <hr>
+        <% @posts.each do |post| %>
+        <h3><a href="article_show.html"><%= link_to  post.title, post %></a></h3>
+        <p class="date"><%= post.created_at.strftime("%A, %b %d")%> </p>
+        <% end %>
+
+
+      </div>
+      <div class="col-3 homepage_content">
+        <h2>Stuff I've Built</h2>
+        <hr>
+        <h3><a href="#">Project 1</a></h3>
+        <p class="date">Friday April 10th</p>
+        <h3><a href="#">Project 2</a></h3>
+        <p class="date">Friday April 11th</p>
+        <h3><a href="#">Project 3</a></h3>
+        <p class="date">Friday April 12th</p>
+
+      </div>
+    </div>
