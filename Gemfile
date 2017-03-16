@@ -10,6 +10,7 @@ gem 'jbuilder', '~> 2.0'
 gem 'sdoc', '~> 0.4.0', group: :doc
 gem 'pygments.rb', '~> 1.1', '>= 1.1.1'
 gem 'redcarpet', '~> 3.4'
+gem 'friendly_id', '~> 5.2'
 
 
 group :development, :test do
