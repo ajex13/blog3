@@ -39,11 +39,11 @@ before_action :project_find, only: [:show, :edit, :update, :destroy]
 private
 
 def project_params
-  params.require(:project).permit(:title, :description, :link)
+  params.require(:project).permit(:title, :description, :link, :slug)
 end
 
 def project_find
-  @project = Project.find(params[:id])
+  @project = Project.friendly.find(params[:id])
 end
 
 end
