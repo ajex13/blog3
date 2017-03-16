@@ -185,6 +185,11 @@ input[type="submit"], .button {
   text-align: center;
 }
 
+
+.hidden {
+  display: none;
+}
+
 @import 'welcome';
 @import 'post_project';
 @import 'pygments';
