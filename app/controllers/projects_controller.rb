@@ -29,11 +29,16 @@ before_action :project_find, only: [:show, :edit, :update, :destroy]
   end
 
   def update
-
+      if @project.update(project_params)
+        redirect_to @project, notice: "successfully updated!"
+      else
+        render 'edit',notice: "Oh no! unable to update"
+      end
   end
 
   def destroy
-
+    @project.destroy
+    redirect_to projects 
   end
 
 private
